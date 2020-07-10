@@ -29,7 +29,7 @@ def show_login(request):
             # return redirect('../users/login')
             return redirect('/home')
         else:
-            return HttpResponse('<script>alert("Invalid username or password")</script>')
+            return HttpResponse('<script>alert("Invalid username or password. Please try again")</script>')
     return render(request, 'login.html')
 
 
