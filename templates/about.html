@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="sli">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/984566.jpg' %}" class="d-block w-100" alt="..." height=550x;>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/slide2.jpg' %}" class="d-block w-100" alt="..." height="550px;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/sli2.jpg' %}" class="d-block w-100" alt="..." height=550px;>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<section id="latest-deals" class="green-border-top">
+
+    <div class="container" style="position:relative;">
+        <div class="latest-deal-in" style="margin-left:0px !important;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carousel-details" class="carousel slide carousel-fade" data-ride="carousel">
+                        <p class="paragraph">Landlord Master</a> is a Rental   Solution Provider. </p>
+                        <p class="paragraph">Landlord Master</a> is a web portal designed to reshape the conventional pattern of rental solution for building, flat, room, space, apartment all around Nepal. This portal allows people to search and book properties from available property list via online presence. The properties are displayed in categorical lists where clients can search the property that best suits their budget range as well as location. The list is regularly updated by our marketing team; the team searches property manually as well as encourages and advocates property owners to post through online with detail information of property.</p>
+                        <p class="paragraph">Landlord Master will completely reduce the old tiresome process of physical travel for the search of room, flat, building etc. Without such burden, the clients will get all facilities of Landlord Master in a single click.</p>
+                        <p class="paragraph">Landlord Master offers clients to set preferences for location as well as budget, as per their need. Property owners can post, manage and modify properties from their free accounts.  In addition to this, the property owners can also view the list of the applicants and tag the property status to ‘Booked’. Property seekers can easily surf via Gharbheti website, and Gharbheti social media to search and book property. Our best feature that builds fast communication among property owner and property seeker is “Notify Room”, which notifies via email and mobile app. Clients who use this feature will get notification whenever a new property that matches to client’s requirement is posted. Similar type of notification alerts to property owner as well, if any client applies to book his property.</p>
+                        <p class="paragraph">Landlord Master is a facilitator that provides dedicated service to property owners and tenants. Our dedicated team works behind and maintains the portal 24/7 to meet success; which lies solely on our users’ satisfaction.  In addition to this, Landlord Master team also guides and provides sufficient information through email, Facebook, Twitter, Google Plus, Instagram, LinkedIn etc. Landlord Master is here for you, to provide efficient rental solution in this hectic busy schedule of modern day lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+
+
+{% endblock content %}
+
+
+
+
+
