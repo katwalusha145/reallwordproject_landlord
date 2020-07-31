@@ -10,10 +10,8 @@ def contact(request):
 
         if form.is_valid():
             form.save()
-            return HttpResponse('<script>alert("Your Quires are Successfully sent !")</script>')
-
+            return HttpResponse('<script>alert("Your Quires are Successfully submitted !")</script>')
     else:
         form = ContactForm()
-
         return render(request, "contact.html", {'form': form})
 
