@@ -11,5 +11,4 @@ class EmployeeForm(forms.ModelForm):
             'fullname':'Full Name(Enter your full name please)',
             'review':'Reviews(Write your experience with us)',
 
-
         }
