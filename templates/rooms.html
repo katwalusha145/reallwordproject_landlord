@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+<div class="row">
+      {% for a in ro %}
+
+    <div class="col-lg-4">
+        <div class="card" style="width: 18rem;">
+
+
+                <img src="{{ a.im2.url }}" class="card-img-top" alt="...">
+                <img src="{{ a.im3.url }}" class="card-img-top" alt="...">
+                <img src="{{ a.im4.url }}" class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <h5 class="card-title"> Flat available at {{ a.Address }}</h5>
+                <h6> Price: {{ a.price }} </h6>
+                <h6>Number of Rooms: {{ a.NumberOfRooms }}</h6>
+                <h6>Address: {{ a.Address }}</h6>
+                <h6>Lender Number: {{ a.lender_contact }}</h6>
+
+                <p class="card-text">
+                   Published Date {{ a.date }}
+                </p>
+
+  <a href="../Submission/{{ a.id }}"
+                   class="btn btn-primary">Rent now</a>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </table>
+
+
+
+    {% endfor %}
+
+
+</div>
+</div>
+{% endblock %}
+
