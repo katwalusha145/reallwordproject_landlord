@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+<div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+        <h1 class="text-center">User Log In</h1>
+        <p class="text-center"> Login here to rent the rooms </p>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <input type="text" class="form-control" name="un" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="pw" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="form-control" name="login" value="Login">
+            </div>
+<p><a href="/users/register" class="btn btn-success">Sign up for new user</a></p>
+
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}
